@@ -16,15 +16,32 @@
             margin: 10px auto;
         }
 
+        .quantity-btn-container{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
+        }
+ .btn-quantity{
+    height: 40px;
+    margin-top: 30px;
+    cursor: pointer;
+ }
+
+
     </style>
 </head>
 <body>
     <div class="Product-card">
            <img src="./T-shirt.jpg"  class="shirt-img"/>
 
-<div>
-    <img src="minus.png" />
-    <img src="plus.png"/>
+<div class="quantity-btn-container">
+    <img src="minus.png" class="btn-quantity" onclick="handleQuantityChange('dec')" />
+
+<span class="quantity-text" id="quantity-text"></span>
+
+
+    <img src="plus.png" class="btn-quantity" onclick="handleQuantityChange('inc')"/>
 
 </div>
 
